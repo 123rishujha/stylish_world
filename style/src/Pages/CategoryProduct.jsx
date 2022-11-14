@@ -16,7 +16,7 @@ function CategoryProduct() {
             height: "100vh",
             position: "fixed",
             left: "0",
-            top: "135px"
+            top: "150px"
           }}
           src="https://cdn4.vectorstock.com/i/1000x1000/04/73/online-shopping-and-e-commerce-banner-design-vector-20760473.jpg"
           alt="banner"

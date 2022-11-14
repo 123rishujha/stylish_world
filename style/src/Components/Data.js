@@ -1,8 +1,8 @@
 export const products = [
     {
       image:
-        "https://imgs.search.brave.com/F2VIylGfFyL_s4aS1SYk3jJbntAtfY04seldBg97HY4/rs:fit:1200:1120:1/g:ce/aHR0cHM6Ly9teWRl/Y29yYXRpdmUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA4L2tpdGNoZW4t/YXBwbGlhbmNlcy5q/cGc",
-      title: "Kitchen"
+        "https://5.imimg.com/data5/OV/KM/CR/ANDROID-37090388/product-jpeg-500x500.jpg",
+      title: "Home Appliances"
     },
     {
       image:

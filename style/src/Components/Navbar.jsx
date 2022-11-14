@@ -80,13 +80,17 @@ const Navbar = () => {
                         <SearchIcon w={'18px'} h={'18px'} />
                     </Button>
                     
-                    <Button variant={'ghost'}>
-                        <Icon w={'18px'} h={'18px'} as={AiOutlineShopping} />
-                    </Button>
+                    <Link as={NavLink} to='/cart' >
+                        <Button variant={'ghost'}>
+                            <Icon w={'18px'} h={'18px'} as={AiOutlineShopping} />
+                        </Button>
+                    </Link>
 
-                    <Button variant={'ghost'}>
-                        <Icon w={'18px'} h={'18px'} as={AiOutlineUser} />
-                    </Button>
+                    <Link as={NavLink} to='/auth'>
+                        <Button variant={'ghost'}>
+                            <Icon w={'18px'} h={'18px'} as={AiOutlineUser} />
+                        </Button>
+                    </Link>
 
                 </Flex>
 
