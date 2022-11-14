@@ -2,7 +2,6 @@ import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { AppContext } from "../context/AppContextProvider";
 import "./Category.css";
-// import { Box,  Image, Text, Grid,LinkBox, LinkOverlay } from "@chakra-ui/react";
 
 import { Link } from "react-router-dom";
 
@@ -10,14 +9,14 @@ import { Link } from "react-router-dom";
 
 function Category() {
   const { categoryData, handleCategoryData } = useContext(AppContext);
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios.get("https://fakestoreapi.com/products/categories").then((res) => {
-      setData(res);
-      console.log(res.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("https://fakestoreapi.com/products/categories").then((res) => {
+  //     setData(res);
+  //     console.log(res.data);
+  //   });
+  // }, []);
 
   console.log(categoryData);
 
@@ -25,10 +24,10 @@ function Category() {
     <>
       <div>
 
-        <h1 className="heading">SHOP BY CATEGORY</h1>
+        <h1 className="category-heading">SHOP BY CATEGORY</h1>
 
         <div
-          className="main"
+          className="category_main"
         >
           {/* jewelery div */}
           <div

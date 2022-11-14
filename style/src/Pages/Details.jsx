@@ -6,7 +6,9 @@ import "./Details.css";
 function Details() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [cart,setCart] = useState([]);
+
+  //here is local storage array;
+  let arr = JSON.parse(localStorage.getItem("cart")) || [];
 
 
 
@@ -36,6 +38,16 @@ function Details() {
     );
   }
 
+
+  //here is add to local storage---------
+  const handleAddToLoacal = () => {
+    arr.push({...data,quantity:1,description:'',rating:''});
+    localStorage.setItem("cart", JSON.stringify(arr));
+    // console.log(arr);
+    alert('Item added to cart')
+  };
+
+
   return (
     <div>
       {/* <h1>{id}</h1> */}
@@ -54,7 +66,7 @@ function Details() {
           <p className="description">Description: {data.description}</p>
 
           <div className="button">
-            <button onClick={()=>setCart(localStorage.setItem(data))}>Add to cart</button>
+            <button onClick={handleAddToLoacal}>Add to cart</button>
             <button>Checkout</button>
           </div>
         </div>

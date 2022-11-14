@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .main {
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 0px;
+    width: 90vw;
+    gap: 10px;
+    /* margin: auto; */
+    justify-content: space-evenly;
+    /* align-items: center; */
+  }
+  
+  .left-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    /* border: 1px solid green; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .cart-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgba(88, 87, 87, 0.363);
+    gap: 15px;
+    padding: 20px 10px;
+    border-radius: 20px;
+  }
+  
+  .detials {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+  }
+  
+  .buttons {
+    width: 230px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .remove-btn {
+    background-color: red;
+    padding: 5px 10px;
+    color: white;
+  }
+  
+  /* second div starts from here */
+  .right-div {
+    /* height: 500%; */
+    width: 30%;
+    /* border: 1px solid yellow; */
+    margin-bottom: auto;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .right-div > div {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: grey;
+    border: 1px solid gray;
+    padding: 10px 5px;
+    border-radius: 15px;
+  }
+  
+  .shipping {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .checkout-shopping {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .checkout-btn {
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  
+  .qtn-btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .qtn-btn button {
+    width: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  /* medium screen */
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    .left-div {
+      gap: 15px;
+      padding: 7px 15px;
+      font-size: 10px;
+    }
+  
+    .detials {
+      font-size: 16px;
+    }
+  
+    .buttons {
+      width: 200px;
+      font-size: 15px;
+    }
+  
+    .right-div {
+      padding: 7px 15px;
+    }
+  
+    .right-div > div {
+      text-align: left;
+      font-size: 15px;
+      margin-bottom: 40px;
+      color: grey;
+      border: 1px solid gray;
+      padding: 10px 5px;
+      border-radius: 10px;
+    }
+  
+    .checkout-btn {
+      background-color: greenyellow;
+      border-radius: 5px;
+      padding: 5px 5px;
+      font-size: 13px;
+    }
+  }
+  
+  /* small screen*/
+  
+  @media screen and (min-width: 200px) and (max-width: 599px) {
+    .main {
+      display: flex;
+      /* border: 1px solid red; */
+      padding: 0px;
+      width: auto;
+      gap: 10px;
+      /* margin: auto; */
+      justify-content: space-evenly;
+      /* align-items: center; */
+    }
+  
+    .left-div {
+      gap: 10px;
+      padding: 4px 10px;
+      font-size: 8px;
+      width: 100%;
+    }
+  
+    .cart-container {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border: 1px solid rgba(88, 87, 87, 0.363);
+      gap: 15px;
+      padding: 10px 5px;
+      border-radius: 10px;
+    }
+  
+    .detials {
+      font-size: 10px;
+    }
+  
+    .buttons {
+      width: 150px;
+      font-size: 8px;
+    }
+  
+    .right-div {
+      padding: 1px 1px;
+      width: 100%;
+    }
+  
+    .checkout-shopping {
+      display: flex;
+      flex-direction: color;
+    }
+  
+    .checkout-shopping {
+      flex-direction: column;
+    }
+  
+    .right-div > div {
+      text-align: left;
+      font-size: 10px;
+      margin-bottom: 10px;
+      color: grey;
+      border: 1px solid gray;
+      padding: 10px 5px;
+      border-radius: 10px;
+      line-height: 15px;
+    }
+  
+    .checkout-btn {
+      background-color: greenyellow;
+      border-radius: 5px;
+      padding: 2px 6px;
+      font-size: 7px;
+    }
+  }
+  

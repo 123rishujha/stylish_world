@@ -1,4 +1,4 @@
-.main {
+.category_main {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@
     font-size: 30px;
   }
 
-  .heading{
+  .category-heading{
     margin-top: 40px;
     margin-bottom: 40px;
     color: green;
@@ -48,7 +48,7 @@
   }
   
   @media (max-width:680px){
-    .main{
+    .category_main{
       grid-template-columns: repeat(1, 1fr);
     }
    
@@ -58,7 +58,7 @@
     .text{
       font-size:18px;
     }
-    .heading{
+    .category-heading{
       font-size: 30px;
     }
   }
